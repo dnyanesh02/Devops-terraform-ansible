@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-    # Step 1: Install Apache2 (equivalent to httpd in Red Hat-based systems)
+    # Step 1: Install apache2
     - name: Install apache2
       apt:
         name: apache2
@@ -10,18 +10,30 @@
         update_cache: yes  # Ensures apt cache is updated
         force: yes  # Automatically installs package without confirmation
 
-    # Step 2: Create a simple HTML file for the website
-    - name: update index.html
-      command: "echo 'Hello Natwest guys, raman khanna this side, Its Friday!!' > /var/www/html/index.html"
+    # Step 2: Remove default apache2 site configuration
+    - name: Remove default apache2 site configuration
+      file:
+        path: /etc/apache2/sites-enabled/000-default.conf
+        state: absent
 
-    # Step 3: Start the Apache2 service and ensure it's enabled on boot
-    - name: Ensure apache2 service is started and enabled
+    # Step 3: Create a custom index.html page
+    - name: Create custom index.html
+      copy:
+        content: |
+          Hello Natwest guys, raman khanna this side, It's Friday!!
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+    # Step 4: Restart apache2 service to apply changes
+    - name: Ensure apache2 service is restarted and enabled
       service:
         name: apache2
         state: restarted
         enabled: yes
 
-    # Step 4: Add user 'raman' 
+    # Step 5: Add user 'raman'
     - name: Ensure user raman exists
       user:
         name: raman
