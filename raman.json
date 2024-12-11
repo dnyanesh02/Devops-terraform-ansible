@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "techlanders-nov2024",
+  "private_key_id": "2a7a9facf94354a665608cbe887357bf6d2ad5ce",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCjmAvFoTYdB6Ho\nRxsk8EGFatF7yRSJnZXwnebPQhQUx20PvLlGd1DSe/30NDovjUirLdJLg0VnnlmL\nVuZ7k1QepYKrkJoNbpS5tXUGpCJUmBLK9/kcAlDhrlKeb+kJyZ7+kQ9cyqiNxdic\n0fOdx1dWSAcPKAuTAiK7Khb5Iwg/GFPKrtiWoxPyNOssSEue56qBV1922DKmrNyb\nl8W+ya4naZQV4UE0jXUjWYg6P+fBgHEE09JbQuU0sBBfaExFyaExC/ZItvwFdk5m\nquYz7oiUwLcM/XcCT+IYizwHiqDbs1GSU/jD1JgHR9JcxNzJAX2Wny0l+XNofkNI\nuV6iAhctAgMBAAECggEAKj7ta0/CRaTe7rjODa/te6KmDi1THGaRfd2I6STLQsJt\nK4802TmeqXxTjGigTf9SMMJYeB+iIKwHu6/pPShCpNdg8yUYYzeXOI3fdqOUKfxL\nfhajQdRnRqBZvYhwyZJDeMHFEdVTyai502V0X95Gc4WOLR/OPVxj06l+3T9qtcAM\nreQuhw+fvVmiKJ8SAj5A7kf9ct9L8uXXgzAmnteLOZlxRIYik3By+68KTck42RfK\nt5PeSulvj6zIS9qdHEWz6H9Adc3lA1OIttWVogVO/3aPm4ItNuJnbmd85mJSjJDY\noBs/hFtQpgPAFwwU5NGUt1xrbW9/wrU3xwdS5ca/kQKBgQDXY34HsndCZPNNX7/u\nKGNGm+qvyMn9aChbEJz3E8ycIAzXAHighxYkk1/i9NYKbjRN1w6ZDjI31Mc13TMg\nXPWvRacELf6XnAj/skC3SVGK0DDSfMnZvMb5ZsYNI2AKIswmaIvYgK8/JAUjgX+x\niR+ra2lY9YNMNU+JMjFXWLUZawKBgQDCcH7cs41uuyjRA2SQ/ng9tX1zT/UtKesl\n3Gz0UVjEFHtfJh4JoZ8mwDpqz1+4Yb+lVhayZD4zYM/ddrpkA+RW3tJi3wak5HzL\n2vuSVVyJhkctzfN3nvfXcCNHuxg9y6s/9nmI4f3C369CU8uNnktR4dwtd8DrkX8K\nfxlVkG4/xwKBgQDQqheX12LIVMqNBB0J2eDLsBN99xUQxc6K4p5ek7Te8AHgbRlv\n0081Yf07/5w5AKj1XEpNJz6pbh8MZN66FLUD94OlffWu5UCmjwc5SfOQer9BvBlF\nMyjEx7dJVSMezrVe5FvPBGRC1F+SFUwjL8gZpvapczifJOqH7LN2fn78PwKBgHnb\nqRZGjWAVegosVy2r3c3G3b2UIfNRLydGUx53kOsqbvt91xtwKF9P4AyqtLHIySQk\npQreWkE27m88hqpB6iwrb605W1+iNzhHoJzgVKN3/UoOpgSVI3zosaO19QZdi5EF\ntrt77t7f82XdQFgcGdZSd/wi7kx0nisE5urCHuZnAoGBAIuBCu52I+v6uXIK84fB\nPlM91hoSGdvf2RYqhUcRsomheSPDiPDpDD2ROspfEl4IZWHw/lkZ3gL9PrfHWb02\n5i4k9+OFqjE6TqL2NogBwX/CvVol9RI9f1Dxogw7SKhh9n9jnx46anUpBgp88ftI\n9KQh/QLb2WYms19C66yzIrkg\n-----END PRIVATE KEY-----\n",
+  "client_email": "synechron-sa@techlanders-nov2024.iam.gserviceaccount.com",
+  "client_id": "103419171044931456268",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/synechron-sa%40techlanders-nov2024.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
