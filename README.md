@@ -116,7 +116,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-key.json"
 terraform init
 terraform apply -auto-approve
 sleep 10
-ansible-playbook -i /tmp/inv -u ec2-user -b --become-method sudo web.yaml
+ansible-playbook -i /tmp/inv -u admin -b --become-method sudo web.yaml
 
 
 
