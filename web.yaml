@@ -7,7 +7,8 @@
       apt:
         name: apache2
         state: present
-        update_cache: yes
+        update_cache: yes  # Ensures apt cache is updated
+        force: yes  # Automatically installs package without confirmation
 
     # Step 2: Create a simple HTML file for the website
     - name: Create a custom index.html
