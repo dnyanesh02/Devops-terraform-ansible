@@ -2,7 +2,6 @@ provider "google" {
   project     = "techlanders-nov2024" # Replace with your GCP project ID
   region      = "europe-west4"
   zone        = "europe-west4-a"
-  credentials = file("raman.json") # Path to the service account JSON file
 }
 
 resource "google_compute_instance" "mygcpserver" {
