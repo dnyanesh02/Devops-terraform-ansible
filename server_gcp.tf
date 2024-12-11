@@ -9,6 +9,10 @@ resource "google_compute_instance" "mygcpserver" {
   name         = "raman-devops-batch-server"
   machine_type = "e2-micro"
 
+  metadata = {
+    ssh-keys = "${var.user}:${file(var.publickeypath)}"
+  }
+
   tags = ["env-production", "owner-raman"]
 
   boot_disk {
@@ -37,3 +41,23 @@ resource "google_compute_instance" "mygcpserver" {
     EOT
   }
 }
+
+
+
+
+
+
+variable "user" {
+    type = string
+    default= "admin"
+}
+variable "privatekeypath" {
+    type = string
+    default = "~/.ssh/id_rsa"
+}
+variable "publickeypath" {
+    type = string
+    default = "~/.ssh/id_rsa.pub"
+}
+
+
