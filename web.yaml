@@ -16,6 +16,12 @@
       args:
         creates: /var/www/html/index.html
 
+    # Step 3: Remove the default Apache site configuration (000-default.conf)
+    - name: Remove default Apache virtual host configuration
+      file:
+        path: /etc/apache2/sites-enabled/000-default.conf
+        state: absent    
+
     # Step 3: Start the Apache2 service and ensure it's enabled on boot
     - name: Ensure apache2 service is started and enabled
       service:
