@@ -4,7 +4,7 @@
   tasks:
     # Step 1: Install apache2
     - name: Install apache2
-      apt:
+      yum:
         name: apache2
         state: present
         update_cache: yes  # Ensures apt cache is updated
