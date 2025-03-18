@@ -8,10 +8,10 @@ terraform {
 }
 
 provider "aws" {
-region = "us-east-1"
+region = "sa-east-1"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-0e54eba7c51c234f6"
+  ami = "ami-0f2d00da2aafb6966"
   vpc_security_group_ids  = [aws_security_group.allow_ssh.id]
   instance_type = "t2.micro"
   key_name = "raman-import"
