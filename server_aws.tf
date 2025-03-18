@@ -14,7 +14,7 @@ resource "aws_instance" "myawsserver" {
   ami = "ami-0f2d00da2aafb6966"
   vpc_security_group_ids  = [aws_security_group.allow_ssh.id]
   instance_type = "t2.micro"
-  key_name = "raman-import"
+  key_name = "raman-import-test"
 
   tags = {
     Name = "raman-DevOps-batch-server"
