@@ -11,7 +11,7 @@ provider "aws" {
 region = "sa-east-1"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-0f2d00da2aafb6966"
+  ami = "ami-04d88e4b4e0a5db46"     #Ubuntu
   vpc_security_group_ids  = [aws_security_group.allow_ssh.id]
   instance_type = "t2.micro"
   key_name = "raman-import-test"
