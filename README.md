@@ -104,7 +104,7 @@ workflow :
 terraform init
 terraform apply -auto-approve
 sleep 10
-ansible-playbook -i /tmp/inv -u ec2-user -b --become-method sudo web.yaml
+ansible-playbook -i /tmp/inv -u ubuntu -b --become-method sudo web.yaml
 
 
 
