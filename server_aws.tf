@@ -8,13 +8,13 @@ terraform {
 }
 
 provider "aws" {
-region = "sa-east-1"
+region = "us-east-1"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-04d88e4b4e0a5db46"     #Ubuntu
+  ami = "ami-04b4f1a9cf54c11d0"     #Ubuntu
   vpc_security_group_ids  = [aws_security_group.allow_ssh.id]
   instance_type = "t2.micro"
-  key_name = "raman-import-test"
+  key_name = "raman-import"
 
   tags = {
     Name = "raman-DevOps-batch-server"
